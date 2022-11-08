@@ -80,7 +80,7 @@ ul {
   text-decoration: none;
 }
 .sitenav-links .pages {
-  color: var(--title-text-color);
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -95,7 +95,7 @@ ul {
   margin-bottom: 20px;
 }
 .studio-black {
-  color: var(--title-text-color);
+  color: var(--primary-text-color);
   margin: bottom 20px;
 }
 
@@ -135,10 +135,16 @@ ul {
 .section-button {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   cursor: pointer;
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .title {
   font-size: 18px;
@@ -166,10 +172,11 @@ ul {
   position: absolute;
   left: 0px;
   bottom: 0px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-page-titles {
-  color: var(--title-text-color);
+  color: var(--primary-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 2;
@@ -508,6 +515,7 @@ ul {
   margin-bottom: 30px;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
 }
 
 .description-text {
@@ -623,6 +631,10 @@ footer {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.image-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .image-item:hover .text-overlay {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -630,7 +642,7 @@ footer {
 }
 
 .article {
-  display: inline-block;
+  display: block;
   width: 370px;
   position: relative;
   overflow: hidden;
@@ -707,6 +719,9 @@ footer {
   left: 50%;
   min-height: 581px;
   min-width: 528px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 
   background-color: var(--primary-white-color);
   opacity: 1;
